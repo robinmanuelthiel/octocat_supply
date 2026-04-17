@@ -89,6 +89,8 @@ export default function Navigation() {
               onClick={toggleTheme}
               className="p-2 rounded-full focus:outline-none transition-colors"
               aria-label="Toggle dark/light mode"
+              aria-pressed={darkMode}
+              title={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
             >
               {darkMode ? (
                 <svg
