@@ -1,4 +1,4 @@
-# 🚀 OctoCAT Supply
+# 🚀 Octo-CAT Supply Repo
 
 ![OctoCAT Supply](./frontend/public/hero.png)
 
