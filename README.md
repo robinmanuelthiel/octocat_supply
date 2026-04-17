@@ -1,4 +1,9 @@
-# 🚀 OctoCAT Supply
+# 🚀 Octo-CAT Supply Repo
+
+*In aisles of code where cat-tech gleams,*
+*Octo-CAT supplies our smartest dreams.*
+*From purr to pixel, branch to byte,*
+*we ship feline futures day and night.*
 
 ![OctoCAT Supply](./frontend/public/hero.png)
 
