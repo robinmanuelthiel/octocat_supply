@@ -78,14 +78,15 @@ test.describe('Product catalog discovery', () => {
     await page.goto('/products');
     await expect(page.locator('h1:has-text("Products")')).toBeVisible();
 
-    const cardImage = page.locator('img[alt="SmartFeeder One"]').first();
+    const productGrid = page.locator('main div.grid').first();
+    const cardImage = productGrid.locator('img').first();
     await expect(cardImage).toHaveClass(/rounded-full/);
 
     await cardImage.click();
     const modal = page.locator('div.fixed.inset-0.bg-black.bg-opacity-50');
     await expect(modal).toBeVisible();
 
-    const modalImage = modal.locator('img[alt="SmartFeeder One"]').first();
+    const modalImage = modal.locator('img').first();
     await expect(modalImage).toHaveClass(/rounded-full/);
   });
 });
