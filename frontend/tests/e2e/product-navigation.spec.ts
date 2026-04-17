@@ -73,4 +73,20 @@ test.describe('Product catalog discovery', () => {
     // And I am prompted to adjust the search filters
     await expect(emptyState).toContainText(/clearing.*changing.*search filters/i);
   });
+
+  test('Product images are displayed as round in catalog and modal', async ({ page }) => {
+    await page.goto('/products');
+    await expect(page.locator('h1:has-text("Products")')).toBeVisible();
+
+    const productGrid = page.locator('main div.grid').first();
+    const cardImage = productGrid.locator('img').first();
+    await expect(cardImage).toHaveClass(/rounded-full/);
+
+    await cardImage.click();
+    const modal = page.locator('div.fixed.inset-0.bg-black.bg-opacity-50');
+    await expect(modal).toBeVisible();
+
+    const modalImage = modal.locator('img').first();
+    await expect(modalImage).toHaveClass(/rounded-full/);
+  });
 });

@@ -169,7 +169,7 @@ export default function Products() {
                     <img
                       src={`/${product.imgName}`}
                       alt={product.name}
-                      className="w-full h-full object-contain p-2"
+                      className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 object-contain rounded-full mx-auto mt-4"
                     />
                     {hasDiscount && (
                       <div className="absolute top-8 left-0 bg-primary text-white px-3 py-1 -rotate-90 transform -translate-x-5 shadow-md">
@@ -288,7 +288,7 @@ export default function Products() {
               <img
                 src={`/${selectedProduct.imgName}`}
                 alt={selectedProduct.name}
-                className="w-full h-auto object-contain max-h-[400px]"
+                className="w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain rounded-full mx-auto"
               />
             </div>
             <h2
