@@ -1,5 +1,10 @@
 # 🚀 Octo-CAT Supply Repo
 
+*In aisles of code where cat-tech gleams,*
+*Octo-CAT supplies our smartest dreams.*
+*From purr to pixel, branch to byte,*
+*we ship feline futures day and night.*
+
 ![OctoCAT Supply](./frontend/public/hero.png)
 
 Welcome to **OctoCAT Supply** — your premier destination for AI-powered smart products designed specifically for your feline companions! 🐱🤖 This sample repository showcases a full-stack ecommerce platform for our fictional company, where cutting-edge cat tech innovations bring together the latest in artificial intelligence, sensor technology, and pet-friendly design.
